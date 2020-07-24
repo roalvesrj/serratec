@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS ProjetoFinal;
+
 CREATE TABLE IF NOT EXISTS "usuario" (
 	"id_usuario" serial NOT NULL,
 	"usuario" varchar(50) NOT NULL,
