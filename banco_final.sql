@@ -1,5 +1,8 @@
 CREATE DATABASE IF NOT EXISTS ProjetoFinal;
 
+BEGIN TRANSACTION;
+
+
 CREATE TYPE tipo_telefone AS ENUM ('Fixo', 'Celular', 'Comercial', 'Recado');
 CREATE TYPE tipo_mail AS ENUM ('Particular', 'Comercial');
 
@@ -121,3 +124,6 @@ ALTER TABLE "pedido"
 ALTER TABLE "pedidoitem"
 	ADD FOREIGN KEY ("id_produto") REFERENCES "produto" ("id_produto") ON UPDATE CASCADE ON DELETE CASCADE,
 	ADD FOREIGN KEY ("id_pedido") REFERENCES "pedido" ("id_pedido") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+COMMIT;
