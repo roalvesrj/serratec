@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS "usuario" (
 	"id_usuario" serial NOT NULL,
 	"usuario" varchar(50) NOT NULL,
 	"senha" char(32) NOT NULL,
-	PRIMARY KEY ("id_usuario")
+	PRIMARY KEY ("id_usuario"),
+	UNIQUE ("usuario")
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_pf" (
