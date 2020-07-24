@@ -1,5 +1,8 @@
 CREATE DATABASE IF NOT EXISTS ProjetoFinal;
 
+CREATE TYPE tipo_telefone AS ENUM ('Fixo', 'Celular', 'Comercial', 'Recado');
+CREATE TYPE tipo_mail AS ENUM ('Particular', 'Comercial');
+
 CREATE TABLE IF NOT EXISTS "usuario" (
 	"id_usuario" serial NOT NULL,
 	"usuario" varchar(50) NOT NULL,
@@ -40,7 +43,6 @@ CREATE TABLE IF NOT EXISTS "usuario_endereco" (
     PRIMARY KEY ("id_endereco")
 );
 
-CREATE TYPE tipo_telefone AS ENUM ('Fixo', 'Celular', 'Comercial', 'Recado');
 CREATE TABLE IF NOT EXISTS "usuario_telefone" (
     "id_telefone" serial NOT NULL,
     "id_usuario" int NOT NULL,
@@ -49,7 +51,6 @@ CREATE TABLE IF NOT EXISTS "usuario_telefone" (
 	PRIMARY KEY ("id_telefone")
 );
 
-CREATE TYPE tipo_mail AS ENUM ('Particular', 'Comercial');
 CREATE TABLE IF NOT EXISTS "usuario_email" (
     "id_email" serial NOT NULL,
     "id_usuario" int NOT NULL,
@@ -109,7 +110,7 @@ ALTER TABLE "usuario_email"
     ADD FOREIGN KEY ("id_usuario") REFERENCES "usuario" ("id_usuario") ON UPDATE CASCADE ON DELETE CASCADE;
 
 ALTER TABLE "categoria"
-	ADD FOREIGN KEY ("id_usuario") REFERENCES "usuario" ("id_usuario") ON UPDATE CASCADE ON DELETE CASCADE,
+	ADD FOREIGN KEY ("id_usuario") REFERENCES "usuario" ("id_usuario") ON UPDATE CASCADE ON DELETE CASCADE;
 
 ALTER TABLE "produto"
 	ADD FOREIGN KEY ("id_categoria") REFERENCES "categoria" ("id_categoria") ON UPDATE CASCADE ON DELETE CASCADE;
