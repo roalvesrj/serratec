@@ -14,7 +14,8 @@ VALUES
 
 -- Subtrai do estoque a quantidade do item 1
 UPDATE produto 
-SET quant_estoque = (quant_estoque - (SELECT quantidade FROM pedidoitem WHERE id_pedidoitem = (SELECT currval(pg_get_serial_sequence('pedidoitem', 'id_pedidoitem'))))) 
+SET quant_estoque = (quant_estoque - 
+(SELECT quantidade FROM pedidoitem WHERE id_pedidoitem = (SELECT currval(pg_get_serial_sequence('pedidoitem', 'id_pedidoitem'))))) 
 WHERE id_produto = (SELECT id_produto FROM pedidoitem WHERE id_pedidoitem = (SELECT currval(pg_get_serial_sequence('pedidoitem', 'id_pedidoitem'))));
 
  
