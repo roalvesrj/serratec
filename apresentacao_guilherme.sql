@@ -12,6 +12,13 @@ inner join usuario_pf uf on ut.id_usuario = uf.id_usuario
 where ut.tipo_tel = 'Celular'
 
 
+-- O seguinte comando une as tabelas Usuario, Categoria e Produto
+
+select u.usuario , c.nome as Categoria, p.nome as Produto
+
+from usuario as u
+inner join categoria as c       on u.id_usuario = c.id_usuario 
+inner join produto as p         on c.id_categoria = p.id_categoria 
 
 --7.b)
 
