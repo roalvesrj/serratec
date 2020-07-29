@@ -13,28 +13,28 @@ CREATE TABLE IF NOT EXISTS "usuario" (
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_pf" (
-	id_pf serial NOT NULL,
-	id_usuario int NOT NULL,
-	nome varchar(50) NOT NULL,
-	cpf char(11) NOT NULL,
-	data_nascimento date NOT NULL,
+	"id_pf" serial NOT NULL,
+	"id_usuario" int NOT NULL,
+	"nome" varchar(50) NOT NULL,
+	"cpf" char(11) NOT NULL,
+	"data_nascimento" date NOT NULL,
 	PRIMARY KEY ("id_pf"),
 	UNIQUE ("cpf")
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_pj" (
-	id_pj serial NOT NULL,
-	id_usuario int NOT NULL,
-	razao_social varchar(50) NOT NULL,
-	cnpj char(14) NOT NULL,
+	"id_pj" serial NOT NULL,
+	"id_usuario" int NOT NULL,
+	"razao_social" varchar(50) NOT NULL,
+	"cnpj" char(14) NOT NULL,
 	PRIMARY KEY ("id_pj"),
 	UNIQUE ("cnpj")
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_endereco" (
 	"id_endereco" serial NOT NULL,
-    "id_usuario" int NOT NULL,
-    "cep" char(8) NOT NULL,
+   "id_usuario" int NOT NULL,
+   "cep" char(8) NOT NULL,
 	"logradouro" varchar(50) NOT NULL,
 	"numero" int NULL,
 	"complemento" varchar(40) NULL,
@@ -45,16 +45,16 @@ CREATE TABLE IF NOT EXISTS "usuario_endereco" (
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_telefone" (
-    "id_telefone" serial NOT NULL,
-    "id_usuario" int NOT NULL,
+   "id_telefone" serial NOT NULL,
+   "id_usuario" int NOT NULL,
 	"numero_tel" varchar(11) NULL,
 	"tipo_tel" tipo_telefone,
 	PRIMARY KEY ("id_telefone")
 );
 
 CREATE TABLE IF NOT EXISTS "usuario_email" (
-    "id_email" serial NOT NULL,
-    "id_usuario" int NOT NULL,
+   "id_email" serial NOT NULL,
+   "id_usuario" int NOT NULL,
 	"email" varchar(60) NULL,
 	"tipo_email" tipo_mail,
 	PRIMARY KEY ("id_email")
