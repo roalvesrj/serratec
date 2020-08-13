@@ -5,11 +5,24 @@ import java.util.*;
 public class Menu {
 
 	public void menuBoasVindas(Usuario usuarioLogado, Conta contaLogada) {
-		System.out.println("|=======                    Seja bem Vindo ao Banco Do Raul                    =======|");
-		System.out.println("|_____________________________________________________________________________________|");
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("|=====================================================================================|");
+		System.out.println("|=======                    Seja Bem Vindo ao Banco Do Raul                    =======|");
+		System.out.println("|=====================================================================================|");
 		System.out.println("|                                                                                     |");
 		System.out.println("|                                                                     Banco do Raul   |");
 		System.out.println("|_____________________________________________________________________________________|");
+		System.out.println("|                                                                                     |");
+		System.out.println("|   Digite seu CPF:                                                                   |");
+		System.out.println("|                                                                                     |");
+		long cpf = scan.nextLong();
+
+		System.out.println("|                                                                                     |");
+		System.out.println("|                            Olá " + cpf + "                                      |");
+		System.out.println("|                                                                                     |");
+		System.out.println("|   Digite sua senha                                                                  |");
+		int senha = scan.nextInt();
 	}
 
 	public void menuConta(Usuario usuarioLogado, Conta contaLogada) {
@@ -106,7 +119,7 @@ public class Menu {
 
 				break;
 			case 4:
-				// Voltar
+				menuConta(usuarioLogado, contaLogada);
 				break;
 		}
 	}
@@ -116,7 +129,9 @@ public class Menu {
 	}
 
 	public void menuSair() {
-		System.out.println("Obrigado por utilizar o Internet Banking.");
+		System.out.println("|=====================================================================================|");
+		System.out.println("|=======             Obrigado por utilizar o Internet Banking ;)               =======|");
+		System.out.println("|=====================================================================================|");
 
 		System.exit(0);
 	}
