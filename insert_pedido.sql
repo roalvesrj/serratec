@@ -1,7 +1,0 @@
-BEGIN TRANSACTION;
-
-
-
-
-
-COMMIT;
