@@ -1,0 +1,165 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.navbar-brand {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar a i { color: white; }
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+
+/* CONTRASTE
+-------------------------------------------------- */
+
+.contraste,
+.contraste nav,
+.contraste div,
+.contraste li,
+.contraste ol,
+.contraste header,
+.contraste footer,
+.contraste section,
+.contraste main,
+.contraste aside,
+.contraste article {
+    color: white !important;
+    background: black !important;
+}
+
+.contraste h1,
+.contraste h2,
+.contraste h3,
+.contraste h4,
+.contraste h5,
+.contraste h6,
+.contraste p,
+.contraste label,
+.contraste strong,
+.contraste em,
+.contraste cite,
+.contraste q,
+.contraste i,
+.contraste b,
+.contraste u,
+.contraste span {
+    color: white !important;
+}
+
+.contraste a{
+    color: yellow !important;
+}
+
+.contraste button,
+.contraste input[type=button],
+.contraste input[type=reset],
+.contraste input[type=submit] {
+    background: black !important;
+    color: yellow !important;
+    border: none !important;
+}
+
+.contraste img.on-contrast-force-gray {
+    filter: grayscale(100%) contrast(120%);
+}
+
+.contraste img.on-contrast-force-white {
+    filter: brightness(0) invert(1);
+}
+
+.contraste input[type=text],
+.contraste input[type=password],
+.contraste input[type=url],
+.contraste input[type=search],
+.contraste input[type=email],
+.contraste input[type=tel],
+.contraste input[type=date],
+.contraste input[type=month],
+.contraste input[type=week],
+.contraste input[type=datetime],
+.contraste input[type=datetime-local],
+.contraste textarea,
+.contraste input[type=number] {
+    background: black !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
