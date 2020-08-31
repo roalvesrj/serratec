@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Grupo 4 - Pequenos Gafanhoto">
+    <title>Contato - RSW Music School</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contato">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">RSW Music School</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+                    </ul>
+
+                    <a id="altocontraste" href="#"><i class="fas fa-adjust"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" pattern="[a-zA-Z]+" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="usuario@dominio.com.br" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" pattern=".{10,}[0-9]+" aria-describedby="telefoneHelp">
+                                <small id="telefoneHelp" class="form-text text-muted">Somente números. DDD + Telefone</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="curso">Curso</label>
+                                <select class="form-control" id="curso" required>
+                                    <option></option>
+                                    <option>Flauta</option>
+                                    <option>Sax</option>
+                                    <option>DJ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" class="form-control" id="assunto" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea class="form-control" id="Mensagem" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <ul class="nav flex-column lista-contato">
+                        <li class="nav-item"><i class="fas fa-map-marker-check"></i> Rua do Imperador, 288 - Centro - Petrópolis</li>
+                        <li class="nav-item"><i class="fas fa-mailbox"></i> CEP: 25000-000</li>
+                        <li class="nav-item"><i class="fas fa-phone-alt"></i> 24 2222-3344</li>
+                        <li class="nav-item"><i class="fab fa-whatsapp"></i> 24 99999-9999</li>
+                    </ul>
+
+                    <ul class="nav nav-fill mt-5 contato-social">
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://www.pudim.com.br" target="_blank" title="Siga no Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://www.pudim.com.br" target="_blank" title="Curta no Facebook"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://www.pudim.com.br" target="_blank" title="Siga no Twitter"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://www.pudim.com.br" target="_blank" title="Assine nosso feed"><i class="fas fa-rss-square"></i></a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- <img src="http://maps.googleapis.com/maps/api/staticmap?center=LAT, LONG&zoom=11&size=250x250"> -->
+                <img src="images/map.png" class="img-fluid" alt="Google Maps">
+            </div>
+        </div>
+        <!-- //Google Maps -->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; 2020 RSW Music School</p>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+
+</body>
+</html>

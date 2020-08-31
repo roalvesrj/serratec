@@ -1,10 +1,6 @@
-$(function() {
-	'use strict'
+// Função Alto Contraste
+document.getElementById("altocontraste").addEventListener("click", ativaContraste);
 
-    $('#altocontraste').on('click', function(e) {
-        e.preventDefault();
-
-        // alert('Teste');
-        $(this).toggleClass( "contraste");
-    })
-});
+function ativaContraste() {
+    document.body.classList.toggle("contraste");
+}

@@ -1,26 +1,110 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
 }
 
+body.contato {
+    padding-top: 6rem;
+}
+
+
+/* LOGIN */
+body.login {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+
+.login .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.login .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.login .form-signin .checkbox {
+    font-weight: 400;
+}
+.login .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .form-signin .form-control:focus {
+    z-index: 2;
+}
+.login .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.login .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.login .form-signin .checkbox {
+    font-weight: 400;
+}
+.login .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.login .form-signin .form-control:focus {
+    z-index: 2;
+}
+.login .form-signin input[type="email"] {
+    margin-bottom: -1px;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+.login .form-signin input[type="password"] {
+margin-bottom: 10px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+
+
 .carousel {
     margin-bottom: 4rem;
 }
 
 .carousel-caption {
-    bottom: 3rem;
+    bottom: 6rem;
     z-index: 10;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .carousel-item {
     height: 32rem;
 }
 
-.carousel-item > img {
+.carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
+    filter: blur(4px);
+    width: 100%;
     min-width: 100%;
     height: 32rem;
 }
@@ -30,6 +114,7 @@ body {
 }
 
 .navbar a i { color: white; }
+
 
 
 /* MARKETING CONTENT
@@ -134,8 +219,8 @@ body {
 .contraste input[type=reset],
 .contraste input[type=submit] {
     background: black !important;
-    color: yellow !important;
-    border: none !important;
+    color: white !important;
+    border: 1px solid white !important;
 }
 
 .contraste img.on-contrast-force-gray {
@@ -158,8 +243,21 @@ body {
 .contraste input[type=datetime],
 .contraste input[type=datetime-local],
 .contraste textarea,
+.contraste select,
 .contraste input[type=number] {
     background: black !important;
     border: 1px solid white !important;
     color: white !important;
+}
+
+.contraste header .navbar {
+    border-bottom: 1px solid #fff;
+}
+.contraste .carousel-caption,
+.contraste .carousel-indicators {
+    background: transparent !important;
+}
+
+.contato-social {
+    font-size: 1.5rem;
 }
